@@ -1,0 +1,55 @@
+client 132.23.1.4 connected and downloaded file.html.
+client 132.23.1.4 disconnected.
+service restarted.
+
+client 132.23.1.4 aaa 10.10.10.10 abc.
+
+Log Scrubbing
+
+client <IP removed> connected and downloaded file.html.
+
+x.y.z.w 0<=x,y,z,w<=255
+
+public String scrubLog(String input){
+    StringBuilder sb = new StringBuilder();
+    int start = 0;
+    int end = 0;
+    while(start < input.length()){
+        if(input.charAt(start) >= '0' && input.charAt(start) <= '9' ){
+            sb.append(input.substring(end, start));
+            end = start;
+            while(end < input.length()){
+                if(input.charAt(end) >= '0' && input.charAt(end) <= '9' || input.charAt(end) == '.'){
+                    end ++;
+                }
+            }
+            String candidateIp = input.substring(start, end );
+            if(validedIp(candidateIp)){
+                sb.append("<IP removed>");
+            }
+            else{
+                sb.append(input.substring(start, end));
+            }
+            start = end;
+        }
+    
+    }
+    sb.append(input.substring(end, start));
+    return sb.toString();
+    
+}
+
+public boolean validedIp(String ip){
+    String[] sts = ip.split(".");
+    int count = 0;
+    for(String st: sts){
+        if(Integer.parseInt(st) < 0 || Integer.parseInt(st) > 255){
+            return false;
+        }
+        count ++;
+    }
+    return count == 4;
+
+
+
+}
