@@ -1,0 +1,47 @@
+List<List<String>> result = new ArrayList<>();
+public List<String> findPath(String initial, String target, Set<String> blockList){
+
+      
+          Set<String> visited = new HashSet<>();
+          List<String> path = new ArrayList<>;
+         visited.add(initial);
+         helper(initial, target, blockList, path, visited);
+          
+            return result;
+}
+
+public void helper(String initial, String target, Set<String> blockList, List<String> path, Set<String> visited){
+
+                   if(initial == target){
+
+                          result.add(new ArrayList<>(path));
+
+                   }
+                  else{
+
+
+
+  
+                   path.add(cur);
+                   visited.add(cur);
+                   char[] chs = cur.toCharArray();
+                   for(int i = 0; i < chs.length; i++){
+                           
+                           if(chs[i] == target.charAt(i))  continue;
+                           if(chs[i] < taget.charAt(i)){
+                                    chs[i] = chs[i] + 1;// next character
+                            }
+                            else{
+                                     chs[i] = chs[i] - 1;// next character
+                            }
+                            String new = String.valueOf(chs);
+                            if(!visited.contains(new) && !blockList.contains(new)){
+                                   helper(new, target, blockList, path, visited);
+                           }
+                          
+                    }
+
+                  }
+                    path.remove(path.size() - 1);
+
+                 }
