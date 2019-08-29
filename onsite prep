@@ -35,9 +35,11 @@
   
   
   
-8/12 软家的Business Application Group onsite. 不知道是不是我去晚了 111大楼附近停车位都满了最后挺到99大楼附近的车库里了。 进去领badge然后喝水坐着，等着人把我们领进去，然后每人安排一个小屋子，放了东西出来拿餐盒集合听注意事项，然后就回屋等面试官来了。
+8/12 软家的Business Application Group onsite. 不知道是不是我去晚了 111大楼附近停车位都满了最后挺到99大楼附近的车库里了。
+进去领badge然后喝水坐着，等着人把我们领进去，然后每人安排一个小屋子，放了东西出来拿餐盒集合听注意事项，然后就回屋等面试官来了。
 我感觉我的面经不是很典型，就不设积分限制了，觉得有帮助的话给我点米就好了：）
-第一轮：一位senior sde，BQ，讲了讲他们做的事情，问了问我过去的project，然后出了道找BST里一个node的predecessor和successor的问题 https://www.geeksforgeeks.org/in ... ssor-given-key-bst/ 
+第一轮：一位senior sde，BQ，讲了讲他们做的事情，问了问我过去的project，然后出了道找BST里一个node的predecessor和successor的问题 
+https://www.geeksforgeeks.org/in ... ssor-given-key-bst/ 
 第二轮：一上来问了些我比较盲点的东西，关键是这一轮面试官像是东欧人口音有点不适应。 Http vs Https. Cookie会带来什么问题，
 什么page可以read cookie什么不可以。 举个Cache的例子cache是什么样的为什么用cache就好了。 我感觉我答的还可以了但是可以感觉到他极其不满意，
 也不是很乐意解释他的问题。 然后让我design dictionary，key是string比如“apple”， value是int比如“1”，要有get（key），set（key，value）的功能，
@@ -74,3 +76,13 @@ Trie Tree
 2. https://www.careercup.com/question?id=17245689
 3. 问什么是singleton然后实现。我用python刷题不知从何下手，最后用Java硬写了。。。第二题是找linked list的倒数第k个node
 4. 类似刷题网 ‍‌‌‌‌‌‌‌‍‌‍‌‌‍‌‌‍‍‍其衣，然后问了一道很奇怪的在一个canvas上画直线有哪些scenario要测试
+
+
+
+
+因为是同学工作在的组，直接面的这个组就。
+第一轮，中国老哥；给一副牌，随意抽5张，求一个函数判断这5个牌是不是一个连续序列，比如9，10，J，Q，K，王可以随意替代。还一个题，有2*n大小的地，给1*2大小的砖，问有多少种码法。还一个题，设计一个rest api跟下游组交流，你需要下游组处理什么样异常，这题就顺着他的思路说。
+第二轮，俄女；给一个字符串，问连续相同字符长度最多为2的最长子字符串。比如，abccddde，abccdd就是结果了。还有一个设计shorten url，顺着她思路说。
+第三轮，TL；刷题网 word search 2， 用trie tree做的。
+第四轮，manager；聊了个做‍‌‌‌‌‌‌‌‍‌‍‌‌‍‌‌‍‍‍的项目。
+给了initial offer，61级，不咋样，后面再看了。
