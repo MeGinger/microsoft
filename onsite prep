@@ -86,3 +86,38 @@ Trie Tree
 第三轮，TL；刷题网 word search 2， 用trie tree做的。
 第四轮，manager；聊了个做‍‌‌‌‌‌‌‌‍‌‍‌‌‍‌‌‍‍‍的项目。
 给了initial offer，61级，不咋样，后面再看了。
+
+
+
+微软面的是office部门63的职位，3轮coding，一轮design，一轮AA。
+第一轮：Word Ladder，利口127，只要求返回长度，不用返回路径
+第二轮：Design Tic-Tac-Toe， 利口348，之前没听说过这个游戏，烙印面试官，花了点时间理解问题，后来基本做出来了。
+
+第三轮：binary search tree找不超过某个数的最大节点，中国面试官，题目比较简单，感觉利口也有原题。
+第四轮：design一个cache system，回答主要集中在evict的算法了，system level的design讨论的不多，感觉回答的不好
+AA轮：问了个很简单的coding，然后就是聊了微软‍‌‌‌‌‌‌‌‍‌‍‌‌‍‌‌‍‍‍的career，还说offer都有个上限，不能argue太多，让我以为会有offer的，结果最后没给offer，过了快两周才收到拒信。
+
+去年准备面试的时候，看了很多地里的面经，很有帮助。最近比较闲，写了两篇面经回馈一下，顺便求大米。
+
+
+
+感觉hiring event考得都很随机，面经基本没什么用
+第一轮BQ + design database schema来run test的result, 写了几个简单的select query然后说了下test case
+第二轮给你一个9*9的0，1 Matrix, 把它想象成一个9*9的image,每个格子是一个像素，构成一个图像有可能是一个full radius的圆，或者连接四个顶点的叉号，或者其他图形或者是空，把它作为input,determine他是属于哪一种，比如若果是full radius的圆返回1，叉号返回2，其他返回3，空返回4
+第三‍‌‌‌‌‌‌‌‍‌‍‌‌‍‌‌‍‍‍轮BQ + 设计电梯，着重电梯的算法不偏重OOD
+第四轮项目经历，从项目经历出发的系统设计，从项目经历出发的不同设计的trade off分析
+
+
+
+一共四轮面试，包括lunch interview
+
+
+第一轮 白人小哥，问了好多bq，然后出了个简单的题，如何reverse一个string。剩下20分钟尬聊。
+
+第二轮，吃饭轮，印度姐，问了好多bq，然后就是meeting room 2的变种。
+
+第三轮，白人大爷，是个隔壁大组lead，问了好多bq，然后出了两个小题，第一，问如何delete一个node。
+并没有给定root。method是这个 void delete(Node toDelete)。第二题，给一个二叉树，返回least common ancestor。
+
+第四轮，印度姐。问了一些bq，然后让实现下singleton，有 follow up, 问如何实现线程安全。
+第二题，开始问system design，让实现一个chat service。剩下12‍‌‌‌‌‌‌‌‍‌‍‌‌‍‌‌‍‍‍分钟，然后第三题，给定一个链表，删除重复的。
